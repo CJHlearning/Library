@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BorrowItem</class>
+ <widget class="QMainWindow" name="BorrowItem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>829</width>
+    <height>44</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="booklabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>12</y>
+      <width>69</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>书籍名称：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bookNamelabel">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>12</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	border: 2px solid #EE82EE; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="authorNamelabel">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>12</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	border: 2px solid #EE82EE; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="authorlabel">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>12</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>作者：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="remainAmountlabel">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>12</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	border: 2px solid #EE82EE; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="remainlabel">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>12</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>剩余量：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BorrowButton">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>5</y>
+      <width>30</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+    color: 	#EE82EE;
+    background-color: #FFFFFF;
+    border-color: 	#EE82EE;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #EE82EE;
+    border-color: #EE82EE;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: 	#DA70D6;
+	border-color: 	#DA70D6;
+}</string>
+    </property>
+    <property name="text">
+     <string>借</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pressNamelabel">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>12</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	border: 2px solid #EE82EE; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="presslabel">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>12</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>出版社：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="caterogyNamelabel">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>12</y>
+      <width>69</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	border: 2px solid #EE82EE; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="caterogylabel">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>12</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>种类：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="LookButton">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>5</y>
+      <width>51</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+    color: 	#EE82EE;
+    background-color: #FFFFFF;
+    border-color: 	#EE82EE;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #EE82EE;
+    border-color: #EE82EE;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: 	#DA70D6;
+	border-color: 	#DA70D6;
+}</string>
+    </property>
+    <property name="text">
+     <string>查看</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

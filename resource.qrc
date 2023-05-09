@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new/load">
+        <file>astronaut.gif</file>
+        <file>main.jpg</file>
+        <file>studentlog.jpg</file>
+        <file>teacherlog.jpg</file>
+        <file>window.png</file>
+    </qresource>
+</RCC>

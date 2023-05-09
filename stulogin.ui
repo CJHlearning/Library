@@ -1,0 +1,2136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StuLogin</class>
+ <widget class="QWidget" name="StuLogin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>576</width>
+    <height>515</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>学生登录系统</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="LoginPage">
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QWidget" name="Login_2" native="true">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="6" column="0">
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="5" column="0">
+           <widget class="QWidget" name="widget" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="Login">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+    color: 	#FFA500;
+    background-color: #FFFFFF;
+    border-color: 	#FFA500;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: #FF8C00;
+	border-color: #FF8C00;
+}</string>
+               </property>
+               <property name="text">
+                <string>登录</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="Return">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+    color: 	#FFA500;
+    background-color: #FFFFFF;
+    border-color: 	#FFA500;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: #FF8C00;
+	border-color: #FF8C00;
+}</string>
+               </property>
+               <property name="text">
+                <string>返回</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QWidget" name="widget_2" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="PasswordLabel">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>密码</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="Password">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	border: 2px solid #FFE4B5; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 2px solid #FFA500;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	color: 	#000000;
+	selection-background-color: #000000;
+	selection-color: #FFFFFF;
+}
+
+
+QLineEdit:disabled { /* QLineEdit在禁用时的状态 */
+	border: 2px solid 	#C0C0C0;
+	background-color: 	#C0C0C0;
+	color: 	#000000;
+}
+
+QLineEdit:read-only { /* QLineEdit在只读时的状态 */
+	border: 2px solid 	#C0C0C0;
+	background-color: 	#C0C0C0;
+	color: 	#000000;
+}</string>
+               </property>
+               <property name="echoMode">
+                <enum>QLineEdit::Password</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QWidget" name="widget_3" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="AccountLabel">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">
+color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>账号</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="Account">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+	border: 2px solid #FFE4B5; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 2px solid #FFA500;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	color: 	#000000;
+	selection-background-color: #000000;
+	selection-color: #FFFFFF;
+}
+
+QLineEdit:read-only { /* QLineEdit在只读时的状态 */
+	border: 2px solid 	#D2B48C;
+	background-color: 	#D2B48C;
+	color: 	#000000;
+}</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QWidget" name="widget_5" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QPushButton" name="PasswordRetrival">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 9pt &quot;幼圆&quot;;
+    color: 	#FFA500;
+    background-color: #FFFFFF;
+    border-color: 	#FFA500;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: #FF8C00;
+	border-color: #FF8C00;
+}</string>
+               </property>
+               <property name="text">
+                <string>找回密码</string>
+               </property>
+               <property name="flat">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_9">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_8">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="SignIn">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 9pt &quot;幼圆&quot;;
+    color: 	#FFA500;
+    background-color: #FFFFFF;
+    border-color: 	#FFA500;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: #FF8C00;
+	border-color: #FF8C00;
+}</string>
+               </property>
+               <property name="text">
+                <string>激活账号</string>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+               <property name="flat">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="Information">
+            <property name="font">
+             <font>
+              <family>方正舒体</family>
+              <pointsize>36</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 170, 0);</string>
+            </property>
+            <property name="text">
+             <string>学生登录系统</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="SignInPage">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="1" column="3" rowspan="6">
+          <spacer name="horizontalSpacer_11">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="7" column="0" colspan="4">
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QPushButton" name="Comfirm">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+    color: 	#FFA500;
+    background-color: #FFFFFF;
+    border-color: 	#FFA500;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: #FF8C00;
+	border-color: #FF8C00;
+}</string>
+             </property>
+             <property name="text">
+              <string>确认</string>
+             </property>
+             <property name="default">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="ReturnToPage1">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+    color: 	#FFA500;
+    background-color: #FFFFFF;
+    border-color: 	#FFA500;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: #FF8C00;
+	border-color: #FF8C00;
+}</string>
+             </property>
+             <property name="text">
+              <string>返回</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="5" column="1" colspan="2">
+          <spacer name="verticalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="0" rowspan="6">
+          <spacer name="horizontalSpacer_12">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLabel" name="PasswordLabel1">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>密码</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1" colspan="2">
+          <spacer name="verticalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="NicknameEdit">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+	border: 2px solid #FFE4B5; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 2px solid #FFA500;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	color: 	#000000;
+	selection-background-color: #000000;
+	selection-color: #FFFFFF;
+}
+
+QLineEdit:read-only { /* QLineEdit在只读时的状态 */
+	border: 2px solid 	#D2B48C;
+	background-color: 	#D2B48C;
+	color: 	#000000;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1" colspan="2">
+          <spacer name="verticalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="Nickname">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>学号</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="QLineEdit" name="PasswordEdit">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+	border: 2px solid #FFE4B5; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 2px solid #FFA500;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	color: 	#000000;
+	selection-background-color: #000000;
+	selection-color: #FFFFFF;
+}
+
+QLineEdit:read-only { /* QLineEdit在只读时的状态 */
+	border: 2px solid 	#D2B48C;
+	background-color: 	#D2B48C;
+	color: 	#000000;
+}</string>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="PasswordRetrivalPage">
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="2" column="2">
+        <widget class="QPushButton" name="PhoneNumbers">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+    color: 	#FFA500;
+    background-color: #FFFFFF;
+    border-color: 	#FFA500;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: #FF8C00;
+	border-color: #FF8C00;
+}</string>
+         </property>
+         <property name="text">
+          <string>通过手机找回</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <spacer name="horizontalSpacer_18">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="Emails">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+    color: 	#FFA500;
+    background-color: #FFFFFF;
+    border-color: 	#FFA500;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: #FF8C00;
+	border-color: #FF8C00;
+}</string>
+         </property>
+         <property name="text">
+          <string>通过邮箱找回</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <spacer name="horizontalSpacer_19">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="3" column="1" colspan="2">
+        <spacer name="verticalSpacer_8">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1" colspan="2">
+        <spacer name="verticalSpacer_12">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="4" column="0" colspan="4">
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <spacer name="horizontalSpacer_20">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Back_2">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+    color: 	#FFA500;
+    background-color: #FFFFFF;
+    border-color: 	#FFA500;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: #FF8C00;
+	border-color: #FF8C00;
+}</string>
+           </property>
+           <property name="text">
+            <string>返回</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="SQ">
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="8" column="0">
+        <widget class="QLabel" name="SQ3">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>安全问题3</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="A3">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>答案3</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="A1">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>答案1</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="AL2">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+	border: 2px solid #FFE4B5; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 2px solid #FFA500;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	color: 	#000000;
+	selection-background-color: #000000;
+	selection-color: #FFFFFF;
+}
+
+QLineEdit:read-only { /* QLineEdit在只读时的状态 */
+	border: 2px solid 	#D2B48C;
+	background-color: 	#D2B48C;
+	color: 	#000000;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QTextBrowser" name="SQT3">
+         <property name="styleSheet">
+          <string notr="true">QTextBrowser {
+	border: 2px solid #000000; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}
+
+QTextBrowser:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 2px solid #298DFF;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	color: 	#000000;
+	selection-background-color: #000000;
+	selection-color: #FFFFFF;
+}
+
+QTextBrowser:read-only { /* QLineEdit在只读时的状态 */
+	border: 2px solid 	#D2B48C;
+	background-color: 	#D2B48C;
+	color: 	#FFFFFF;
+}</string>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <spacer name="verticalSpacer_9">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="SQ2">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>安全问题2</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QLineEdit" name="AL3">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+	border: 2px solid #FFE4B5; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 2px solid #FFA500;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	color: 	#000000;
+	selection-background-color: #000000;
+	selection-color: #FFFFFF;
+}
+
+QLineEdit:read-only { /* QLineEdit在只读时的状态 */
+	border: 2px solid 	#D2B48C;
+	background-color: 	#D2B48C;
+	color: 	#000000;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QTextBrowser" name="SQT2">
+         <property name="styleSheet">
+          <string notr="true">QTextBrowser {
+	border: 2px solid #000000; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}
+
+QTextBrowser:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 2px solid #298DFF;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	color: 	#000000;
+	selection-background-color: #000000;
+	selection-color: #FFFFFF;
+}
+
+QTextBrowser:read-only { /* QLineEdit在只读时的状态 */
+	border: 2px solid 	#D2B48C;
+	background-color: 	#D2B48C;
+	color: 	#FFFFFF;
+}</string>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="A2">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>答案2</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="SQ1">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>安全问题1</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <spacer name="verticalSpacer_10">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1">
+        <widget class="QTextBrowser" name="SQT1">
+         <property name="styleSheet">
+          <string notr="true">QTextBrowser {
+	border: 2px solid #FFE4B5; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}
+
+QTextBrowser:read-only { /* QLineEdit在只读时的状态 */
+	border: 2px solid 	#D2B48C;
+	background-color: 	#D2B48C;
+	color: 	#FFFFFF;
+}</string>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="AL1">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+	border: 2px solid #FFE4B5; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 2px solid #FFA500;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	color: 	#000000;
+	selection-background-color: #000000;
+	selection-color: #FFFFFF;
+}
+
+QLineEdit:read-only { /* QLineEdit在只读时的状态 */
+	border: 2px solid 	#D2B48C;
+	background-color: 	#D2B48C;
+	color: 	#000000;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="0" colspan="2">
+        <layout class="QHBoxLayout" name="ButtonsBox">
+         <item>
+          <spacer name="horizontalSpacer_13">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Confirm">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+    color: 	#FFA500;
+    background-color: #FFFFFF;
+    border-color: 	#FFA500;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: #FF8C00;
+	border-color: #FF8C00;
+}</string>
+           </property>
+           <property name="text">
+            <string>确认</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Back">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+    color: 	#FFA500;
+    background-color: #FFFFFF;
+    border-color: 	#FFA500;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: #FF8C00;
+	border-color: #FF8C00;
+}</string>
+           </property>
+           <property name="text">
+            <string>返回</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="PasswordReset">
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0" colspan="5">
+        <spacer name="verticalSpacer_7">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1" colspan="2">
+        <widget class="QLabel" name="PasswordResetLabel">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>密码输入</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <spacer name="horizontalSpacer_14">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="PasswordConfirmLabel">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>再次确认</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLineEdit" name="PasswordResetEdit">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+	border: 2px solid #FFE4B5; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 2px solid #FFA500;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	color: 	#000000;
+	selection-background-color: #000000;
+	selection-color: #FFFFFF;
+}
+
+QLineEdit:read-only { /* QLineEdit在只读时的状态 */
+	border: 2px solid 	#D2B48C;
+	background-color: 	#D2B48C;
+	color: 	#000000;
+}</string>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="5">
+        <spacer name="verticalSpacer_11">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="4">
+        <spacer name="horizontalSpacer_15">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLineEdit" name="PasswordConfirmEdit">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+	border: 2px solid #FFE4B5; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 2px solid #FFA500;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	color: 	#000000;
+	selection-background-color: #000000;
+	selection-color: #FFFFFF;
+}
+
+QLineEdit:read-only { /* QLineEdit在只读时的状态 */
+	border: 2px solid 	#D2B48C;
+	background-color: 	#D2B48C;
+	color: 	#000000;
+}</string>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0" colspan="5">
+        <layout class="QHBoxLayout" name="ButtonsBox_2">
+         <item>
+          <widget class="QPushButton" name="Yes">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+    color: 	#FFA500;
+    background-color: #FFFFFF;
+    border-color: 	#FFA500;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: #FF8C00;
+	border-color: #FF8C00;
+}</string>
+           </property>
+           <property name="text">
+            <string>确认</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_16">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="No">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+    color: 	#FFA500;
+    background-color: #FFFFFF;
+    border-color: 	#FFA500;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: #FF8C00;
+	border-color: #FF8C00;
+}</string>
+           </property>
+           <property name="text">
+            <string>取消</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="EmailPage">
+      <layout class="QFormLayout" name="formLayout">
+       <item row="13" column="1">
+        <layout class="QHBoxLayout" name="ButtonsBox_4">
+         <item>
+          <widget class="QPushButton" name="Y_2">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+    color: 	#FFA500;
+    background-color: #FFFFFF;
+    border-color: 	#FFA500;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: #FF8C00;
+	border-color: #FF8C00;
+}</string>
+           </property>
+           <property name="text">
+            <string>确认</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_26">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="N_2">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+    color: 	#FFA500;
+    background-color: #FFFFFF;
+    border-color: 	#FFA500;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: #FF8C00;
+	border-color: #FF8C00;
+}</string>
+           </property>
+           <property name="text">
+            <string>返回</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="7" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <spacer name="horizontalSpacer_28">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="EmailLabel">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:rgb(255, 255, 255)</string>
+           </property>
+           <property name="text">
+            <string>邮箱</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="EmailEdit">
+           <property name="styleSheet">
+            <string notr="true">
+QLineEdit {
+	border: 2px solid #FFE4B5; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 2px solid #FFA500;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	color: 	#000000;
+	selection-background-color: #000000;
+	selection-color: #FFFFFF;
+}
+
+
+QLineEdit:disabled { /* QLineEdit在禁用时的状态 */
+	border: 2px solid 	#C0C0C0;
+	background-color: 	#C0C0C0;
+	color: 	#000000;
+}
+
+QLineEdit:read-only { /* QLineEdit在只读时的状态 */
+	border: 2px solid 	#C0C0C0;
+	background-color: 	#C0C0C0;
+	color: 	#000000;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_29">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="3" column="1">
+        <spacer name="verticalSpacer_16">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="5" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <spacer name="horizontalSpacer_17">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="AccountLabel_2">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:rgb(255, 255, 255)</string>
+           </property>
+           <property name="text">
+            <string>账号</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="AccountEdit">
+           <property name="styleSheet">
+            <string notr="true">
+QLineEdit {
+	border: 2px solid #FFE4B5; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 2px solid #FFA500;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	color: 	#000000;
+	selection-background-color: #000000;
+	selection-color: #FFFFFF;
+}
+
+
+QLineEdit:disabled { /* QLineEdit在禁用时的状态 */
+	border: 2px solid 	#C0C0C0;
+	background-color: 	#C0C0C0;
+	color: 	#000000;
+}
+
+QLineEdit:read-only { /* QLineEdit在只读时的状态 */
+	border: 2px solid 	#C0C0C0;
+	background-color: 	#C0C0C0;
+	color: 	#000000;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_27">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="9" column="1">
+        <spacer name="verticalSpacer_15">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="PhoneNumberPage">
+      <layout class="QGridLayout" name="gridLayout_8">
+       <item row="4" column="0">
+        <spacer name="horizontalSpacer_24">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="4" column="2">
+        <spacer name="horizontalSpacer_25">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="5" column="0">
+        <spacer name="horizontalSpacer_21">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="5" column="2">
+        <spacer name="horizontalSpacer_22">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="5" column="1">
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <widget class="QLabel" name="PhoneNum">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>手机号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="PhoneNumEdit">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+	border: 2px solid #FFE4B5; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 2px solid #FFA500;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	color: 	#000000;
+	selection-background-color: #000000;
+	selection-color: #FFFFFF;
+}
+
+QLineEdit:read-only { /* QLineEdit在只读时的状态 */
+	border: 2px solid 	#D2B48C;
+	background-color: 	#D2B48C;
+	color: 	#000000;
+}</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="4" column="1">
+        <layout class="QFormLayout" name="formLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="AccountNum">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>  账号  </string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="AccountNumEdit">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+	border: 2px solid #FFE4B5; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 10px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+	background-color: 	#FFFFFF	; /* 背景颜色 */
+	color: 	#000000; /* 文本颜色 */
+	selection-background-color: #000000; /* 选中文本的背景颜色 */
+	selection-color: #FFFFFF; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 2px solid #FFA500;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	color: 	#000000;
+	selection-background-color: #000000;
+	selection-color: #FFFFFF;
+}
+
+QLineEdit:read-only { /* QLineEdit在只读时的状态 */
+	border: 2px solid 	#D2B48C;
+	background-color: 	#D2B48C;
+	color: 	#000000;
+}</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="7" column="0" colspan="3">
+        <layout class="QHBoxLayout" name="ButtonsBox_3">
+         <item>
+          <widget class="QPushButton" name="Y">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+    color: 	#FFA500;
+    background-color: #FFFFFF;
+    border-color: 	#FFA500;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: #FF8C00;
+	border-color: #FF8C00;
+}</string>
+           </property>
+           <property name="text">
+            <string>确认</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_23">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="N">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	font: 12pt &quot;幼圆&quot;;
+    color: 	#FFA500;
+    background-color: #FFFFFF;
+    border-color: 	#FFA500;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton::hover{	
+    color: #FFFFFF;
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton::pressed,QPushButton::checked{
+    color: #FFFFFF;
+    background-color: #FF8C00;
+	border-color: #FF8C00;
+}</string>
+           </property>
+           <property name="text">
+            <string>返回</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="6" column="1">
+        <spacer name="verticalSpacer_13">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="1">
+        <spacer name="verticalSpacer_14">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
